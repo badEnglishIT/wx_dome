@@ -1,0 +1,7 @@
+<!--利用绝对定位隐藏canvas,不能直接有隐藏属性-->
+<canvas style="width: {{thumbWidth}}px; height: {{thumbHeight}}px;border:1px solid black;position: absolute;left:-300px;top:-300px;" canvas-id="firstCanvas"></canvas>
+<button bindtap="preview">预览</button>
+<view wx:if="{{imgpath}}">
+  <view><image src="{{imgpath}}" style="width: {{thumbWidth}}px; height: {{thumbHeight}}px;"></image></view>
+</view>
+<view wx:else><view>222</view></view>

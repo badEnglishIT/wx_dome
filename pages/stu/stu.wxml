@@ -1,0 +1,3 @@
+<rich-text nodes="{{html}}"></rich-text>
+<import src="../../utils/wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:details.nodes}}"/>

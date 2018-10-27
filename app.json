@@ -1,0 +1,20 @@
+{ 
+  "pages":[
+    "pages/scrollView/scrollView",
+    "pages/stu/stu",
+    "pages/index/index",
+    "pages/thumbImg/thumbImg",
+    "pages/click/click",
+    "pages/promise/promise",
+    "pages/strData/strData",
+    "pages/noresubmit/noresubmit",
+    "pages/interceptor/interceptor",
+    "pages/video/video" 
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

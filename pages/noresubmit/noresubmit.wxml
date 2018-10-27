@@ -1,0 +1,15 @@
+<!--pages/noresubmit/noresubmit.wxml-->
+<view style="text-align:center">表单</view>
+<form bindsubmit="form">
+<view>
+  <text style="width:20%;float:left">名字</text>
+  <input type="text" name="name" style="width:60%"></input>
+</view>
+
+<button formType="submit" disabled="{{disabled}}">提交</button>
+</form>
+
+<view style="text-align:center">用户授权</view>
+<button bindgetuserinfo="getUserInfo" open-type="getUserInfo" 
+    disabled="{{userDisabled}}">微信授权登录</button>
+

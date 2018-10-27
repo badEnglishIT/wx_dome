@@ -1,0 +1,11 @@
+<!--pages/video/video.wxml-->
+<view wx:for='{{video}}'  class='scroll-views'>
+  <image hidden="{{item.hidden}}" class='play' bindtap="playVoide" data-id="{{index}}" src='/static/play.png'></image>
+  <image hidden="{{item.hidden}}" style="" class="case-picture" src="{{item.img}}"
+  mode="scaleToFill" bindtap="playVoide" data-id="{{index}}">
+  </image> 
+  <view wx:if="{{item.display}}">
+    <video hidden="{{!item.hidden}}" src='{{item.file}}' direction='90' enable-progress-gesture='true'
+  preload="auto" id="{{index}}"></video>
+  </view>
+</view>

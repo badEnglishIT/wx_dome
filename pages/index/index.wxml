@@ -1,0 +1,7 @@
+<button bindtap="selectVideo">控制视频播放</button>
+<button bindtap="thumbImg">canvas缩略图片</button>
+<button bindtap="click">点击事件</button>
+<button bindtap="promise">promise示例</button>
+<button bindtap="strData">字符串setData的几种方法</button>
+<button bindtap="interceptor">js拦截器</button>
+<button bindtap="noresubmit">js防止表单、授权重复提交</button>

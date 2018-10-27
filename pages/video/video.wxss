@@ -1,0 +1,34 @@
+/* pages/video/video.wxss */
+ page{
+   /* height: 100%; */
+   background-color:#F5F0EC; 
+}
+.scroll-views{
+   margin-top:-.5rem;  
+   /* display: flex; */
+   position: relative;
+   height: 100%; 
+  width: 100%;
+  /* background-color: azure; */
+}
+.scroll-views video{
+  height: 10rem;
+  width: 100%;
+   margin-top: 1rem; 
+   border-radius:.5rem;
+}
+.scroll-views image{
+  height: 10rem;
+  width: 100%;
+   margin-top: 1rem; 
+   border-radius:.5rem;
+   z-index: 0;
+}
+.scroll-views .play{
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  z-index: 2;
+}
