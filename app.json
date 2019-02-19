@@ -1,8 +1,12 @@
 { 
   "pages":[
-    "pages/scrollView/scrollView",
-    "pages/stu/stu",
     "pages/index/index",
+    "pages/stu/stu",
+    
+    
+    "pages/scrollView/scrollView",
+    
+    
     "pages/thumbImg/thumbImg",
     "pages/click/click",
     "pages/promise/promise",

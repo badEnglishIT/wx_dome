@@ -1,19 +1,10 @@
-<scroll-view style="width:100%;height:400px;background-color:red" scroll-y='{{true}}' scroll-top='{{scrollTop}}' class="scroll">
-  <view style="width:100%;height:100px;"> 1</view>
-  <view class="lx">dome</view>
- <view style="width:100%;height:100px;"> 2</view>
- <view style="width:100%;height:100px;"> 3</view>
- 
- <view style="width:100%;height:100px;"> 4</view>
- <view style="width:100%;height:100px;"> 5</view>
- <view style="width:100%;height:100px;"> 6</view>
- <view style="width:100%;height:100px;"> 7</view>
- <view style="width:100%;height:100px;"> 8</view>
- 
- <view style="width:100%;height:100px;"> 9</view>
- <view style="width:100%;height:100px;"> 10</view>
-
+<scroll-view style="width:100%;height:400px;background-color:red" scroll-y='{{true}}'  class="scroll"
+bindscrolltoupper="top" scroll-top="{{scrollTop}}" scroll-into-view="{{toViewStr}}{{toViewId}}">
+  <view style="background-color:white;text-align:center" hidden="{{!isLoad}}">
+    <image src="/static/load.gif" mode="widthFix" style="width:66px;"></image>
+  </view>
+  
+  <view style="width:100%;height:100px;" wx:for="{{data}}" id="{{toViewStr}}{{index}}"> 
+  {{toViewStr}}{{index}}--{{item}}</view>
+  
 </scroll-view>
-<view class="a">
-  11
-</view>

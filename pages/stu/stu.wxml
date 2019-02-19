@@ -1,3 +1,23 @@
-<rich-text nodes="{{html}}"></rich-text>
-<import src="../../utils/wxParse/wxParse.wxml"/>
-<template is="wxParse" data="{{wxParseData:details.nodes}}"/>
+<view bindtap='selectArea'>选择</view>
+<view>
+  {{m[value[0]]}}月-{{d[value[1]]}}日 {{h[value[2]]}}:{{i[value[3]]}}
+</view>
+<!----区域选择----->
+<view class='picker'>
+  <view class='title' bindtap="confirm">确定</view>
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="changeTime">
+    <picker-view-column style='text-align:center;'>
+      <view wx:for="{{m}}" style="line-height: 50px" wx:key="this">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column style='text-align:center;'>
+      <view wx:for="{{d}}" style="line-height: 50px" wx:key="this">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column style='text-align:center;'>
+      <view wx:for="{{h}}" style="line-height: 50px" wx:key="this">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column style='text-align:center;'>
+      <view wx:for="{{i}}" style="line-height: 50px" wx:key="this">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+ 

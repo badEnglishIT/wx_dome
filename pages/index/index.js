@@ -59,5 +59,10 @@ Page({
     wx.navigateTo({
       url: '/pages/logs/logs',
     })
+  },
+  scrollView:function(){
+    wx.navigateTo({
+      url: '/pages/scrollView/scrollView',
+    })
   }
 })

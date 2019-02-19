@@ -1,2 +1,27 @@
-/* pages/stu/stu.wxss */
-@import "../../utils/wxParse/wxParse.wxss"; 
+/* pages/My/address/addTo/addTo.wxss */
+view,text{
+  font-size: 14px;
+}
+ 
+
+/* 地区选择 */
+.picker{
+  /* margin-top: 10px;
+  float: left;
+  color: #ccc; */
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: .5rem;
+  box-sizing: border-box;
+  position: fixed;
+  background: #fff;
+  z-index:999;
+  bottom: 0;
+}
+.title{
+  color:#1AAD19;
+  font-size:1rem;
+  border-bottom:1px solid #e2e2e2;
+  line-height:2rem;
+}
